@@ -1,0 +1,19 @@
+###
+GET  http://127.0.0.1:5003/health
+
+###
+
+GET  http://127.0.0.1:5003/api/inventario/PROD001
+
+###
+
+POST http://127.0.0.1:5003/api/inventario/guardar
+accept: application/json
+content-type: application/json
+
+{
+  "id_producto": "PROD001",
+  "cantidad": 3
+
+}
+
